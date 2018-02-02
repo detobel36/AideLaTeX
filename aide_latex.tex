@@ -12,9 +12,17 @@
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
+\fancyhead[L]{Aide \LaTeX}
 \fancyhead[C]{\includegraphics[scale=0.2]{./logo.jpg}}
-\fancyhead[L]{}
-\fancyhead[R]{}
+\fancyhead[R]{R. Detobel \& D. Hoornaert}
+% Footer
+\fancyfoot[C]{}
+\fancyfoot[R]{page \thepage}
+% Line
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
 
 
 %opening
@@ -330,6 +338,22 @@
        \end{vmatrix}$
       \end{minipage}
       
+    
+\section{Haut et bas de page}
+  \subsection{Introduction}
+    \LaTeX permet de faire pleins de choses par défaut de manière très rapide.  Par exemple ajouter des informations au dessus ou en dessous de la page.  Vous pouvez donc remarquer que ce document à le logo de l'ULB, le titre du document et le nom de ses auteurs se trouvent en haut de la page.  En bas de page il y a la page.  Il s'agit d'une librairie qui permet de faire ces effets.  Il en existe plusieurs, nous allons vous apprendre quelques balises du package \verb|fancyhdr|.
+    
+  \subsection{Initialiser}
+    Pour utiliser le package fancyhdr nous allons comancer par importer le package et l'initialiser: \\
+    \verb|\usepackage{fancyhdr}|\\
+    \verb|\pagestyle{fancy}|\\
+    
+  \subsection{Mettre du texte et des images}
+    Dans votre header, vous pouvez mettre du texte mais également des images.  Il suffit d'écrire ces informations comme n'importe où dans votre document \LaTeX.  Nous allons donc commencer par définir l'image au milieu du header:\\
+    \verb|\fancyhead[C]{\includegraphics[scale=0.2]{./logo.jpg}}|\\
+    Décortiquons cette ligne.  Le premier mot ''fancyhead'' permet de dire que l'on va définir un header (du packet fancy).  Si l'on veut définir des informations pour le footer, ce sera ''fancyfoot''.  La lettre entre croche définit la position que l'on confirugre.  Il y a donc ``C'' pour center, ``R'' pour Right et ``L'' pour Left.  Enfin, vous pouvez mettre entre crochet n'importe quel texte ou image (comme dans le cas ci-dessus).
+  
+  \subsection{Ajouter des lignes}
     
   
 \end{document}
