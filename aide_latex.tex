@@ -41,11 +41,11 @@
 % - Introduction ---------------------------------------------------------------------------------------------------------
 \section{Introduction}
   \subsection{Les avantages}
-    \LaTeX\ permet de créé un document PDF via des balises.  Il est très pratique pour écrire un rapport, des formules mathématiques, une table des matières...  Bref, ce qui (en général) est compliqué sur des éditeurs tel que Word devient ``simple'' ici (lorsque l'on a pris l'habitude de l'utiliser).  Sachez également que les profs aiment voir de jolie rapport en \LaTeX.
-    
+    \LaTeX\ permet de créer un document PDF via des balises.  Il est très pratique pour écrire un rapport, des formules mathématiques, une table des matières\ldots  Bref, ce qui (en général) est compliqué sur des éditeurs tel que Word devient ``simple'' ici (lorsque l'on a pris l'habitude de l'utiliser).  Sachez également que les profs aiment voir de jolis rapports en \LaTeX.
+
   \subsection{Les IDE}
-    Les IDE viens de ``Integrated Development Environment``, ici on ne fait pas de développement...  On devrait dire ILE ''Integrated \LaTeX\ Environment.  Mais entre nous, je vous propose de garder IDE.\\
-    Ces IDE vous permettent de créer un document \LaTeX\ plus facilement que via un simple éditeur de texte.  Votre éditeur vous permet d'ajouter une balise juste en poussant sur un bouton, fait de l'autocomplétion, ...  Bref, pleins de petites choses qui vous permettrons d'aller plus vite.\\
+    Les IDE veulent dire ``Integrated Development Environment``, ici on ne fait pas de développement\ldots On devrait dire ILE ''Integrated \LaTeX\ Environment.  Mais entre nous, je vous propose de garder IDE.\\
+    Ces IDE vous permettent de créer un document \LaTeX\ plus facilement que via un simple éditeur de texte.  Votre éditeur vous permet d'ajouter une balise juste en poussant sur un bouton, fait de l'autocomplétion, etc.  Bref, plein de petites choses qui vous permettront d'aller plus vite.\\
     Nombre de sondés : 9
     \begin{itemize}
       \item texWork : 2
@@ -53,49 +53,49 @@
       \item LateXila :1
       \item TexMaker : 1
       \item TexStudio : 2
-      \item sublime texte : 1
-      \item vim : 1
-      \item notepad++ : 1
+      \item Sublime Text : 1
+      \item Vim : 1  % <3
+      \item Notepad++ : 1
     \end{itemize}
-    Les IDE intègres en général un compilateur permettant de créer le document PDF.  Si vous n'utilisez pas d'IDE vous pouvez tout de même écrire du \LaTeX\ dans un simple éditeur de texte et compiler ensuite votre ``code'' pour produire le document PDF.
-    
+    Les IDE intègrent en général un compilateur permettant de créer le document PDF.  Si vous n'utilisez pas d'IDE vous pouvez tout de même écrire du \LaTeX\ dans un simple éditeur de texte et compiler ensuite votre ``code'' pour produire le document PDF.
+
   \subsection{Les balises}
-    \LaTeX\ utilise des balises permettant de préciser comment votre texte doit être compris par l'éditeur.  Ces balises commencent en général par un backslash (\textbackslash).  Il y a deux types de balises les balises qui doivent être ouverte et fermée et les simples balises.  Par exemple, pour définir le contenu de votre document vous devez le mettre entre les balises \verb|\begin{document}| et \verb|\end{document}|.  En fait vous spécifié le début et la fin.  Ces balises ``begin'' et ``end'' permettent de définir un environnement.  Vous retrouverez ces balises dans les parties à venir.\\
-    Les balises simples sont beaucoup utilisé pour les caractères spéciaux tel que les symboles mathématiques ou les caractères UTF8 non disponible de base sur un clavier.  Par exemple, pour mettre un backslash vous ne pouvez pas taper \textbackslash car il sera interprété comme le début d'une blise.  Vous devez donc taper: \verb|\textbackslash|.
-    
+    \LaTeX\ utilise des balises permettant de préciser comment votre texte doit être compris par l'éditeur.  Ces balises commencent en général par un backslash (\textbackslash).  Il y a deux types de balises les balises qui doivent être ouverte et fermée et les simples balises.  Par exemple, pour définir le contenu de votre document vous devez le mettre entre les balises \verb|\begin{document}| et \verb|\end{document}|.  En fait vous spécifiez le début et la fin.  Ces balises ``begin'' et ``end'' permettent de définir un environnement.  Vous retrouverez ces balises dans les parties à venir.\\
+    Les balises simples sont beaucoup utilisées pour les caractères spéciaux tels que les symboles mathématiques ou les caractères UTF8 non disponible de base sur un clavier.  Par exemple, pour mettre un backslash vous ne pouvez pas taper \textbackslash car il sera interprété comme le début d'une balise.  Vous devez donc taper: \verb|\textbackslash|.
+
   \subsection{Les packages.}
-    Par défault, \LaTeX\ intègre des balises (comme en python, en C++ ou en Java).   Cependant, si vous voulez faire des choses plus complèxe, il vous faudra importer des packages (des sortes de librairire).  Les packages vous permettent donc d'utiliser de nouvelles balises.  Les packages doivent être importé en début de document via la balise \verb|\usepackage{nom du package}|.  Sachez que certains packages se trouvent déjà sur votre ordinateur et ne sont juste pas intégré par défault dans \LaTeX\ alors que d'autres doivent être téléchargé en plus.  Internet vous renseignera mieux que nous sur comment installer un package et sur tous les packages existant.
-    
+    Par défault, \LaTeX\ intègre des balises (comme en python, en C++ ou en Java). Cependant, si vous voulez faire des choses plus complexes, il vous faudra importer des packages (des sortes de librairies).  Les packages vous permettent donc d'utiliser de nouvelles balises.  Les packages doivent être importé en début de document via la balise \verb|\usepackage{nom du package}|.  Sachez que certains packages se trouvent déjà sur votre ordinateur et ne sont juste pas intégrés par défaut dans \LaTeX\ alors que d'autres doivent être téléchargées en plus.  Internet vous renseignera mieux que nous sur comment installer un package et sur tous les packages existant.
+
   \subsection{Le corps du texte.}
     % a faire
-    
+
   \subsection{Document déjà fait}
-    Voici un ``code'' avec déjà tout pour que vous puissiez écrire vos documents.  A noté que le symbole ``\%'' permet de commencer un commentaire.  C'est à dire du texte qui ne sera pas lu par \LaTeX\ et donc simplement ignoré.
+    Voici un ``code'' avec déjà tout pour que vous puissiez écrire vos documents.  A noter que le symbole ``\%'' permet de commencer un commentaire.  C'est à dire du texte qui ne sera pas lu par \LaTeX\ et donc simplement ignoré.
     \begin{verbatim}
       \documentclass[a4paper,11pt]{article}
-      \usepackage[french]{babel} % Mise en page Français
-      \usepackage[utf8]{inputenc} % Mode d'encodage
-      \usepackage[T1]{fontenc}
-      \usepackage{amsmath}
+      \usepackage[french]{babel}  % Mise en page Français
+      \usepackage[utf8]{inputenc}  % Mode d'encodage du fichier source
+      \usepackage[T1]{fontenc}  % Mode d'encodage de police dans le fichier destination
+      \usepackage{amsmath}  % 3 packages pour la mise en page des formules mathématiques
       \usepackage{amsfonts}
       \usepackage{amssymb}
-      \usepackage{hyperref} %Permet d'avoir des liens automatique dans votre table des matières
-      \usepackage{graphicx}
+      \usepackage{hyperref}  % Permet d'avoir des liens automatique dans votre table des matières
+      \usepackage{graphicx}  % Permet d'inclure des images
       \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
-      
+
       \title{Votre Titre}
       \author{L'auteur}
-      
+
       \begin{document} % Début du document
 
-      \maketitle % Création d'un titre automatiquement
+      \maketitle % Création d'un titre automatiquement (page de garde)
 
       \newpage % Nouvelle page
       \tableofcontents % Table des matières
       \newpage % Nouvelle page
-      
+
       % Votre Texte
-      
+
       \end{document} % Fin du document
     \end{verbatim}
 
@@ -104,35 +104,45 @@
 \section{Éléments basique}
   \subsection{Type de document}
     % a faire
-    
+
   \subsection{Structure du contenu} % Chapitre, section, sous-section, paragraphe...
     \subsubsection{Titre}
-      Vous pouvez créé des séparation, des titres, des chapitres, ...  Bref, plusieurs méthodes existent pour structurer votre document.  En fonction du type de document (voir paragraphe ci dessus) il y a différentes balises à utiliser.  Voici la liste des balises les plus utilisé permettant d'organiser son code (trié par leur ordre d'importance):
+      Vous pouvez créer des séparations, des titres, des chapitres, etc.  Bref, plusieurs méthodes existent pour structurer votre document.  En fonction du type de document (voir paragraphe ci-dessus), il y a différentes balises à utiliser.  Voici la liste des balises les plus utilisées permettant d'organiser son code (trié par leur ordre d'importance):
       \begin{enumerate}
         \item \verb|\chapter{titre}| Chapitre (disponible dans les documents article)
         \item \verb|\section{titre}| Section
         \item \verb|\subsection{titre}| Sous-section
         \item \verb|\subsubsection{titre}| Sous-sous-section
-        % \item \verb|| 
+        % \item \verb||
       \end{enumerate}
       Par exemple, ``Éléments basique'' est une \verb|section| et ``Structure du contenu'' est une \verb|subsubsection|.
-    
+
+			À noter que ces commandes-ci ne sont pas définies sur base de \verb|begin| et \verb|end| : un chapitre (respectivement une section) se termine lorsqu'un autre chapitre (respectivement une autre section) est déclaré.
+
     \subsubsection{Table des matières.}
-      La création d'une table des matière sur \LaTeX\ se fait de manière automatique. Celle-ci sera mis en place via l'instruction suivante :
+      La création d'une table des matière sur \LaTeX\ se fait de manière automatique. Celle-ci sera mis en place via l'instruction suivante~:
       \begin{verbatim}
         \tableofcontents
       \end{verbatim}
-      Celle-ci va reprendre l'ensemble des structures utilisées dans votre script \LaTeX\ (\verb|chapitre|, \verb|section|, \verb|subsection|, \verb|subsubsection|) et les mettre en page.
-      
+      Celle-ci va reprendre l'ensemble des structures utilisées dans votre script \LaTeX\ (\verb|chapter|, \verb|section|, \verb|subsection|, \verb|subsubsection|) et les mettre en page.
+
     \subsubsection{Marges.}
-       Si vous avez déjà tenter  de compiler votre script \LaTeX\ une fois, vous vous serez surement demander comment réduire la taille de ces imposantes marges. Pour cela rien de plus simple. Il vous suffit d'importer le package \verb|geometry| et d'y inclure la taille de vos marges comme suit :
+       Si vous avez déjà tenté de compiler votre script \LaTeX\ une fois, vous vous serez surement demandé comment réduire la taille de ces imposantes marges. Pour cela rien de plus simple. Il vous suffit d'importer le package \verb|geometry| et d'y inclure la taille de vos marges comme suit :
       \begin{verbatim}
         \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
       \end{verbatim}
-    
+
+			Ces données peuvent toute être changées pour obtenir des marges de la taille désirée.
+
+			Une alternative au package \verb|geometry| est le package \verb|fullpage| qui s'utilise ainsi~:
+			\begin{verbatim}
+				\usepackage{fullpage}
+			\end{verbatim}
+			et qui trouve des marges automatiques.
+
     \subsubsection{Paragraphe}
       % a faire (Denis)
-      
+
   \subsection{Mise en forme}
     Il est toujours possible de mettre en page le texte dans vos paragraphes.  Notez que la mise en page se fait automatiquement pour les titres.
     \begin{center}
@@ -140,18 +150,18 @@
 	  \hline
 	  \verb|\textit{texte}| & \textit{I} & Italique\\\hline
 	  \verb|\underline{texte}| & \underline{U} & Souligne\\\hline
-	  \verb|\textbftexte}| & \textbf{G} & Gras\\\hline
+	  \verb|\textbf{texte}| & \textbf{G} & Gras\\\hline
 	\end{tabular}
     \end{center}
     Il est également possible d'aligner votre texte au centre en le mettant entre des balises \verb|\begin{center}| et \verb|\end{center}|.
-      
+
 
 % - Liste ----------------------------------------------------------------------------------------------------------------
 \section{Liste}
   \subsection{Introduction}
-    \LaTeX\ intègre plusieurs type de listes.  Nous vous en présenterons deux dans ce document.
-    
-  \subsection{Liste numéroté}
+    \LaTeX\ intègre plusieurs types de listes.  Nous vous en présenterons deux dans ce document.
+
+  \subsection{Liste numérotée}
     Il s'agit simplement d'une liste avec des numéros devant chaque point.\\
     \begin{minipage}{0.5\textwidth}
      \begin{verbatim}
@@ -167,9 +177,9 @@
       \item Second point
       \end{enumerate}
     \end{minipage}
-    
-  \subsection{Liste à point}
-    Encore plus basique, il s'agit d'une liste avec simplement des points.\\
+
+  \subsection{Liste à points}
+    Encore plus basique, il s'agit d'une liste avec simplement des points (appelé liste à puces).\\
     \begin{minipage}{0.5\textwidth}
      \begin{verbatim}
       \begin{itemize}
@@ -184,9 +194,9 @@
       \item Second point
       \end{itemize}
     \end{minipage}
-  
+
   \subsection{Personnalisation}
-    Il vous est possible de personnalisé le caractères mis au début de chaque nouveau point. Pour cela il vous suffit de mettre entre crochet (\verb|[ ]|) le caractères que vous voulez.  Par exemple \textbullet\ ou un +\\
+    Il vous est possible de personnaliser le caractère mis au début de chaque nouveau point. Pour cela il vous suffit de mettre entre crochet (\verb|[ ]|) le caractères que vous voulez.  Par exemple \textbullet\ ou un +\\
     \begin{minipage}{0.5\textwidth}
      \begin{verbatim}
       \begin{itemize}
@@ -204,11 +214,11 @@
       \end{itemize}
     \end{minipage}
 
-  
+
 % - Tableau --------------------------------------------------------------------------------------------------------------
 \section{Tableau}
   \subsection{Introduction}
-    Faire un tableau en \LaTeX\ n'est pas toujours simple.  Nous vous expliquons ici les balises que nous utilisons le plus souvent.  Sachez cependant que pour des tableau complexe le plus simple reste d'utiliser un outil disponible sur internet à l'adresse: \url{http://tablesgenerator.com/latex_tables}
+    Faire un tableau en \LaTeX\ n'est pas toujours simple.  Nous vous expliquons ici les balises que nous utilisons le plus souvent.  Sachez cependant que pour des tableau complexes, le plus simple reste d'utiliser un outil disponible sur internet à l'adresse: \url{http://tablesgenerator.com/latex_tables}
   \subsection{Créer un tableau}
     % a faire
   \subsection{Bordure}
@@ -222,20 +232,30 @@
 % - Math -----------------------------------------------------------------------------------------------------------------
 \section{Math}
   \subsection{Introduction}
-    Il existe plusieurs manière d'écire des formules mathématique.  Quoi qu'il en soit il vous faut rentrer dans un environnement math.  Il existe plusieurs environnement mathématique et plusieurs moyen d'y rentrer.
-    
-    \subsubsection{Code sur une ligne}
-      Pour écrire vos formules mathématique dans une phrase vous devez les mettres \textbf{entre} des balises dollard (\$) ou entre la suite de caractères ``\verb|\(|'' et ``\verb|\)|'' pour fermer la balise. Voici un petit exemple: $\forall a \in \mathbb{R}, \Sigma_{i=1}^{10} (a+i)$
-    
-    \subsubsection{Code centre}
-      A d'autre moment, vous aurez plus envie de mettre en évidence une formule et de la mettre au centre spéciallement sur une ligne.  Pour cela vous devez mettre vos balises \textbf{entre} des doubles dollard (\$\$) soit via la balise ``\verb|\[|'' et ``\verb|\]|''
-      \[\forall a \in \mathbb{R}, \Sigma_{i=1}^{10} (a+i)\]
-  
+    Il existe plusieurs manières d'écrire des formules mathématiques.  Quoi qu'il en soit, il vous faut rentrer dans un environnement math.  Il existe plusieurs environnement mathématiques et plusieurs moyens d'y rentrer.
+
+    \subsubsection{Code intégré à une ligne}
+      Pour écrire vos formules mathématique dans une phrase vous devez les mettres \textbf{entre} des balises dollard (\$) ou entre la suite de caractères ``\verb|\(|'' et ``\verb|\)|'' pour fermer la balise. Voici un petit exemple: $\forall a \in \mathbb{R}, \sum_{i=1}^{10} (a+i)$. Le code utilisé est le suivant~:
+			\begin{verbatim}
+				$\forall a \in \mathbb{R}, \sum_{i=1}^{10}(a+i)$
+			\end{verbatim}
+
+    \subsubsection{Code centré}
+      A d'autres moments, vous aurez plus envie de mettre en évidence une formule et de la mettre au centre spécialement sur une ligne. Pour cela vous devez mettre vos balises \textbf{entre} des doubles dollars (\$\$) soit via la balise ``\verb|\[|'' et ``\verb|\]|''
+      \[\forall a \in \mathbb{R}, \sum_{i=1}^{10} (a+i).\]
+
+			Le code utilisé est le suivant~:
+			\begin{verbatim}
+      	\[\forall a \in \mathbb{R}, \sum_{i=1}^{10} (a+i).\]
+			\end{verbatim}
+
+			Vous pouvez également remarquer que l'affichage dans ces deux modes est différent~: une formule centrée prendra plus de place et une formule intégrée à une ligne tentera de prendre le moins de place possible pour ne pas casser l'alignement du paragraphe.
+
   \subsection{Résumé des balises}
     \begin{table}[h]
     \begin{tabular}{|l|l|l|}
       \hline
-      \textbf{Balise} & \textbf{Symbole} &\textbf{Description}\\\hline 
+      \textbf{Balise} & \textbf{Symbole} &\textbf{Description}\\\hline
       \verb|\forall| & \multicolumn{1}{c|}{$\forall$} &Pour tout\\\hline
       \verb|\in| & \multicolumn{1}{c|}{$\in$} &Appartient à\\\hline
       \verb|\mathbb{Lettre}| & \multicolumn{1}{c|}{$\mathbb{N}$} &Ensemble (remplacer ``Lettre'' par la lettre de l'ensemble voulu)\\\hline
@@ -244,27 +264,50 @@
       \verb|\supset| & \multicolumn{1}{c|}{$\supset$} &Contient...\\\hline
       \verb|\subseteq| & \multicolumn{1}{c|}{$\subseteq$} &Inclus ou égal à...\\\hline
       \verb|\supseteq| & \multicolumn{1}{c|}{$\supseteq$} &Contient ou égal à...\\\hline
+			\verb|\to| & \multicolumn{1}{c|}{$\to$} &Flèche vers la droite\\\hline
+			\verb|\Rightarrow| & \multicolumn{1}{c|}{$\Rightarrow$} &Flèche d'implication logique\\\hline
+			\verb|\iff| & \multicolumn{1}{c|}{$\iff$} &Double implication (si et seulement si)\\\hline
       \verb|\exists| & \multicolumn{1}{c|}{$\exists$} &Il existe ...\\\hline
       \verb|\leq| & \multicolumn{1}{c|}{$\leq$} &Plus petit ou égal\\\hline
       \verb|\geq| & \multicolumn{1}{c|}{$\geq$} &Plus grand ou égal\\\hline
-      \verb|\Sigma| & \multicolumn{1}{c|}{$\Sigma$} &Somme\\\hline
+      \verb|\sum| & \multicolumn{1}{c|}{$\sum$} &Somme\\\hline
+			\verb|\prod| & \multicolumn{1}{c|}{$\prod$} &Produit\\\hline
       \verb|\log| & \multicolumn{1}{c|}{$\log$} &Logarithme \\\hline
       \verb|\int| & \multicolumn{1}{c|}{$\int$} &Intégral\\\hline
       \verb|\infty| & \multicolumn{1}{c|}{$\infty$} &Infini\\\hline
-      \verb|\phi| & \multicolumn{1}{c|}{$\phi$} &Vide\\\hline
+			\verb|\lim| & \multicolumn{1}{c|}{$\lim$} &Limite\\\hline
+      \verb|\emptyset| & \multicolumn{1}{c|}{$\emptyset$} &Vide\\\hline
       \verb|\sqrt{valeur}| & \multicolumn{1}{c|}{$\sqrt{valeur}$} &Racine de valeur\\\hline
       \verb|\frac{x}{y}| & \multicolumn{1}{c|}{$\frac{x}{y}$} &Fraction (division) de x par y\\\hline
       % \verb| | & \multicolumn{1}{c|}{ } & \\\hline
     \end{tabular}
     \end{table}
-    
-  \subsection{Lettres grec}
-    Pour utiliser les lettres grec il vous suffit de mettre leur nom.  Par exemple $\alpha$ (\verb|\alpha|), $\beta$ (\verb|\beta|), ...  Certaines lettres grecs peuvent être écrite en majuscule comme par exemple sigma.  Pour se faire, il suffit de mettre la première lettre de la commande en majuscule.  Exemple: $\Sigma$ (\verb|\Sigma|) (à la place $\sigma$ (\verb|\sigma|)).
-    
+
+	\subsection{Opérateurs et bornes}
+		Certaines notations mathématiques attendent des bornes (lors d'une sommation $\sum$ par exemple, ou pour une limite). Ces bornes sont soit des bornes supérieures, soit inférieures. Par exemple, une borne qui doit être mise en dessous d'un opérateur se note entre accolades, juste après un underscore~:
+		\begin{verbatim}
+			\lim_{n \to \infty}
+		\end{verbatim}
+
+		pour représenter~:
+		\[\lim_{n \to \infty}\]
+
+		De même, une borne qui doit être mise au dessus se fera de la même manière en changeant l'underscore par un circonflexe~:
+		\begin{verbatim}
+			\sum_{i=1}^{10}f(i)
+		\end{verbatim}
+		qui donne~:
+		\[\sum_{i=1}^{10}f(i)\]
+
+		Cependant, ces notations ne sont pas réservées aux opérateurs particuliers. Il est commun de devoir mettre un exposant dans une formule (par exemple $O(n^2)$ pour dénoter une complexité). L'exposant se met de la même manière~: grâce au circonflexe. Également, ajouter un indice (par exemple $x_1, x_2, \ldots$ pour dénoter une suite) se fait par un underscore.
+
+  \subsection{Lettres grecques}
+    Pour utiliser les lettres grecques il vous suffit de mettre leur nom.  Par exemple $\alpha$ (\verb|\alpha|), $\beta$ (\verb|\beta|), ...  Certaines lettres grecs peuvent être écrites en majuscule comme par exemple sigma.  Pour ce faire, il suffit de mettre la première lettre de la commande en majuscule.  Exemple: $\Sigma$ (\verb|\Sigma|) (à la place $\sigma$ (\verb|\sigma|)).
+
   \subsection{Graphes}
     \subsubsection{Exemple}
       \begin{minipage}{\textwidth}
-	\center  
+	\center
 	\begin{tikzpicture}
 		\draw (0,2) node[anchor=south east]{$a$} node{\textbullet};
 		\draw (0,1) node[anchor=east]{$b$} node{\textbullet};
@@ -279,10 +322,10 @@
 		\draw[color=blue] (0,0) -- (3,1);
 	\end{tikzpicture} \\
 	\end{minipage}\hfill
-    
+
     \subsubsection{Introduction}
       Nous ne présenterons ici qu'une toute petite partie de ce module simplement pour vous expliqué que cela existe et pour vous expliquer rapidement.  Sachez également qu'il est possible de faire des repères cartésien, ...  Nous vous invitons à consulter internet pour plus d'information.
-      
+
     \subsubsection{Créé l'environnement}
       \begin{verbatim}
         \begin{minipage}{\textwidth}
@@ -290,22 +333,22 @@
         \begin{tikzpicture}
       \end{verbatim}
       Avec ces 4 balises vous serez dans un environnement de dessin.  La seule chose que je vous propose de modifier ici est \verb|{\textwidth}|.  Cela défini la taille que va prendre votre dessin.  Si vous voulez par exemple que le graphique prenne la moitier de la page (en largeur) mettez: \verb|{0.5\textwidth}|.
-      
+
     \subsubsection{Créer un point}
       Exemple: \verb|\draw (0,2) node[anchor=south east]{$a$} node{\textbullet};|\\
-      Passsons rapidement en revue cette instruction (l'ordre des nodes n'a pas d'importance).  Nous avons donc l'instruction \verb|\draw| suivit des coorodonnées où placer le point.\\ Vient ensuite \verb|node[anchor=south east]{$a$}| qui décrit le label à placé à coté du point.  Ici on précise (via \verb|anchor| que le point sera placé au sud est du label.\\
+      Passsons rapidement en revue cette instruction (l'ordre des nodes n'a pas d'importance).  Nous avons donc l'instruction \verb|\draw| suivit des coorodonnées où placer le point.\\ Vient ensuite \verb|node[anchor=south east]{$a$}| qui décrit le label à placé à coté du point.  Ici on précise (via \verb|anchor|) que le point sera placé au sud est du label.\\
       Enfin, on dit de placer un \verb|\textbullet| à cette cordonnées (ce qui correspond à \textbullet).
-      
+
     \subsection{Créer une ligne}
       Exemple: \verb|\draw (0,1) -- (3,1);|\\
       On retrouve de nouveau les coordonnées.  La syntaxe est assez simple, on a les 2 coordonnées à relier lié par 2 tirrets représentant la ligne.  Ces deux tirrets peuvent être changé par ellipse ou autre (la syntaxe des coordonnées deva peut-être un peu changé ou précisé).
-      
-  \subsection{Matrice} 
+
+  \subsection{Matrice}
     \subsubsection{Introduction}
       Nous parlerons ici de seulement deux sortes de matrices: ( ) et | |.\\
-      
+
     \subsubsection{Matrice classique}
-      Pour faire une matrice, il vous faut rentrer dans l'invironnement math (avec des \$ par exemple).  Ensuite vous devez spécifié que vous voulez une matrice, ici nous utiliseront ``pmatrix''.  Nous allons donc faire \verb|$\begin{pmatrix}|.  Ensuite, cela va se passer comment un tableau.  C'est à dire un ``\&'' pour séparré le colonne et ``\textbackslash\textbackslash'' pour les lignes.  Cela donne donc:\\                                                                                                                                                                                                                       
+      Pour faire une matrice, il vous faut rentrer dans l'environnement math (avec des \$ par exemple).  Ensuite vous devez spécifier que vous voulez une matrice, ici nous utiliseront ``pmatrix''.  Nous allons donc faire \verb|$\begin{pmatrix}|.  Ensuite, cela va se passer comment un tableau.  C'est à dire un ``\&'' pour séparer les colonnes et ``\textbackslash\textbackslash'' pour les lignes.  Cela donne donc:\\
       \begin{minipage}{0.5\textwidth}
         \begin{verbatim}
          $\begin{pmatrix}
@@ -321,8 +364,10 @@
        \end{pmatrix}$
       \end{minipage}
 
+			Pour noter une matrice entre crochets et pas entre parenthèses, il suffit de remplacer \verb|pmatrix| par \verb|bmatrix| (pour \textit{parenthesis matrix} et \textit{bracket matrix} respectivement).
+
     \subsubsection{Déterminant}
-      Il vous suffit de suivre la même syntaxe pour faire des matrices déterminante. Un bonne exemple vaut mieux que des explications:\\
+      Il vous suffit de suivre la même syntaxe pour noter le déterminant d'une matrice. Un bon exemple vaut mieux que des explications~:\\
       \begin{minipage}{0.5\textwidth}
         \begin{verbatim}
          $\begin{vmatrix}
@@ -337,23 +382,23 @@
 	c & d
        \end{vmatrix}$
       \end{minipage}
-      
-    
+
+
 \section{Haut et bas de page}
   \subsection{Introduction}
-    \LaTeX permet de faire pleins de choses par défaut de manière très rapide.  Par exemple ajouter des informations au dessus ou en dessous de la page.  Vous pouvez donc remarquer que ce document à le logo de l'ULB, le titre du document et le nom de ses auteurs se trouvent en haut de la page.  En bas de page il y a la page.  Il s'agit d'une librairie qui permet de faire ces effets.  Il en existe plusieurs, nous allons vous apprendre quelques balises du package \verb|fancyhdr|.
-    
+    \LaTeX permet de faire plein de choses par défaut de manière très rapide.  Par exemple ajouter des informations au dessus ou en dessous de la page.  Vous pouvez donc remarquer que ce document a le logo de l'ULB, le titre du document et le nom de ses auteurs en haut de la page.  En bas de page il y a le numéro de la page. Il s'agit d'une librairie qui permet de faire ces effets.  Il en existe plusieurs, nous allons vous apprendre quelques balises du package \verb|fancyhdr|.
+
   \subsection{Initialiser}
-    Pour utiliser le package fancyhdr nous allons comancer par importer le package et l'initialiser: \\
+    Pour utiliser le package fancyhdr nous allons commencer par importer le package et l'initialiser~:\\
     \verb|\usepackage{fancyhdr}|\\
     \verb|\pagestyle{fancy}|\\
-    
+
   \subsection{Mettre du texte et des images}
-    Dans votre header, vous pouvez mettre du texte mais également des images.  Il suffit d'écrire ces informations comme n'importe où dans votre document \LaTeX.  Nous allons donc commencer par définir l'image au milieu du header:\\
+    Dans votre header, vous pouvez mettre du texte mais également des images.  Il suffit d'écrire ces informations comme n'importe où dans votre document \LaTeX.  Nous allons donc commencer par définir l'image au milieu du header~:\\
     \verb|\fancyhead[C]{\includegraphics[scale=0.2]{./logo.jpg}}|\\
-    Décortiquons cette ligne.  Le premier mot ''fancyhead'' permet de dire que l'on va définir un header (du packet fancy).  Si l'on veut définir des informations pour le footer, ce sera ''fancyfoot''.  La lettre entre croche définit la position que l'on confirugre.  Il y a donc ``C'' pour center, ``R'' pour Right et ``L'' pour Left.  Enfin, vous pouvez mettre entre crochet n'importe quel texte ou image (comme dans le cas ci-dessus).
-  
+    Décortiquons cette ligne.  Le premier mot ''fancyhead'' permet de dire que l'on va définir un header (du packet fancy).  Si l'on veut définir des informations pour le footer, ce sera ''fancyfoot''.  La lettre entre crochets définit la position que l'on configure.  Il y a donc ``C'' pour center, ``R'' pour Right et ``L'' pour Left.  Enfin, vous pouvez mettre entre crochets n'importe quel texte ou image (comme dans le cas ci-dessus).
+
   \subsection{Ajouter des lignes}
-    
-  
+
+
 \end{document}
